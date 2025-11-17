@@ -7,7 +7,7 @@ import TokenAdder from './components/TokenAdder';
 import PriceAlert from './components/PriceAlert';
 import useWeb3 from './hooks/useWeb3';
 import usePortfolio from './hooks/usePortfolio';
-import { Token, PortfolioItem } from './types';
+import { Token } from './types';
 import './styles/globals.css';
 
 const CONFIG = {
@@ -60,36 +60,4 @@ const App: React.FC = () => {
     <div className="container mx-auto p-4 text-white bg-black min-h-screen">
       <header className="text-center py-4 border-b border-gray-700 mb-6">
         <img
-          src="https://photos.pinksale.finance/file/pinksale-logo-upload/1759847695513-f915ce15471ce09f03d8fbf68bc0616f.png"
-          alt="VinuChain Logo"
-          className="mx-auto max-w-[150px] mb-2"
-        />
-        <h1 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-          VinuChain Portfolio Tracker
-        </h1>
-        <p className="text-gray-500 text-sm">Auto-displays VC and tokens with blockchain logs</p>
-      </header>
-
-      <WalletConnect
-        web3={web3}
-        onConnect={handleConnect}
-        isMetaMaskDetected={isMetaMaskDetected}
-        currentAddress={currentAddress}
-        watchlist={watchlist}
-        setWatchlist={setWatchlist}
-      />
-
-      <NetworkStats web3={web3} />
-
-      <PortfolioTable portfolioData={portfolioData} totalValue={totalValue} explorerUrl={CONFIG.EXPLORER_URL} />
-
-      <TokenAdder web3={web3} currentAddress={currentAddress} onAddToken={handleAddToken} tokens={tokens} onRemoveToken={handleRemoveToken} />
-
-      <PriceAlert coingeckoId={CONFIG.COINGECKO_VC_ID} />
-
-      <div id="errorDisplay" className="hidden p-3 mt-2 rounded-lg bg-red-900 text-red-400"></div>
-    </div>
-  );
-};
-
-export default App;
+          src="https://photos.pinksale.finance/file/pinksale-logo-upload/175984769551
