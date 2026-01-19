@@ -7,4 +7,4 @@ A React-based portfolio tracker for VinuChain, displaying VC (VinuCoin) and ERC-
 - Auto-detect ERC-20 tokens via blockchain logs.
 - Manually add tokens by contract address.
 - Display VC and tokens in portfolio table with balance, price, value, and allocation.
-- Export portfolio as CSV, set VC price alerts, and share portfolio snapshots.
+- Export portfolio as CSV, set VC price alerts, and share portfolio snapshots.  
